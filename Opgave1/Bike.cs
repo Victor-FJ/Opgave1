@@ -57,5 +57,10 @@ namespace Opgave1
             Price = 500;
             NoOfGears = 3;
         }
+
+        public override string ToString()
+        {
+            return $"Id '{Id}' {Color}";
+        }
     }
 }

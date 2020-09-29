@@ -50,5 +50,12 @@ namespace Opgave1
             Price = price;
             NoOfGears = noOfGears;
         }
+
+        public Bike()
+        {
+            Color = "Blank";
+            Price = 500;
+            NoOfGears = 3;
+        }
     }
 }

@@ -109,5 +109,16 @@ namespace Opgave1Tests
             Assert.ThrowsException<ArgumentException>(() => bike = new Bike(Id, Color, -1045, NoOfGears));
             Assert.ThrowsException<ArgumentOutOfRangeException>(() => bike = new Bike(Id, Color, Price, 0));
         }
+
+        [TestMethod]
+        public void BikeTestV3()
+        {
+            //Testing that default constructor does make legal values
+            Bike bike = new Bike();
+
+            bike.Color = bike.Color;
+            bike.Price = bike.Price;
+            bike.NoOfGears = bike.NoOfGears;
+        }
     }
 }
